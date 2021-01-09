@@ -1,0 +1,16 @@
+{% load static %}
+<div class="border-right border-warning h-100 text-center">
+                    <div class="text-center">
+                     <img src="{% static 'images/PPP.jpg' %} " alt="profilepic"
+                          class="img-fluid rounded-circle mt-5" width="100px" height="100px">
+                    </div>
+                    <h3 class="mt-3 text-white st-font">Sakib Ahmed</h3>
+                    <hr class="border-light">
+                        <nav class="nav flex-column text-center">
+                            <a href="{% url 'home' %}" class="nav-link {{home}}">Home</a>
+                            <a href="{% url 'skills' %}" class="nav-link {{skill}}">Professional Skill</a>
+                            <a href="{% url 'workshow' %}" class="nav-link{{work}}">Work Expeience</a>
+                            <a href="{% url 'education' %}" class="nav-link{{education}}">Education</a>
+                            <a href="{% url 'infoshow' %}" class="nav-link{{info}}">Personal Information</a>
+                        </nav>
+</div>
